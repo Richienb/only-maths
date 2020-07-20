@@ -7,8 +7,11 @@ Mathematical implementations of programming functions.
 - [Round](#round)
 - [Round up](#round-up)
 - [Round down](#round-down)
+- [Round to interval](#round-to-interval)
 
 ## Round
+
+> Depends on [Round down](#round-down)
 
 ```math
 Round(n) = f(n) = Floor((n mod 1) + 0.5)
@@ -33,4 +36,16 @@ Floor(n) = f(n) = n - (n mod 1)
 
 Floor(1.2) = 1
 Floor(2.8) = 2
+```
+
+## Round to interval
+
+> Depends on [Round](#round)
+
+```
+RoundInterval(n, i) = f(n, i) = Round(n / i) * i
+
+RoundInterval(1, 5) = 0
+RoundInterval(4, 5) = 5
+RoundInterval(8, 5) = 10
 ```
