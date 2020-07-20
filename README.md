@@ -14,7 +14,7 @@ Mathematical implementations of programming functions.
 > Depends on [Round down](#round-down)
 
 ```math
-Round(n) = f(n) = Floor((n mod 1) + 0.5)
+Round(n) = f(n) = RoundDown((n mod 1) + 0.5)
 
 Round(1.2) = 1
 Round(2.8) = 3
@@ -23,19 +23,19 @@ Round(2.8) = 3
 ## Round up
 
 ```
-Ceil(n) = f(n) = n + 1 - (n mod 1)
+RoundUp(n) = f(n) = n + 1 - (n mod 1)
 
-Ceil(1.2) = 2
-Ceil(2.8) = 3
+RoundUp(1.2) = 2
+RoundUp(2.8) = 3
 ```
 
 ## Round down
 
 ```
-Floor(n) = f(n) = n - (n mod 1)
+RoundDown(n) = f(n) = n - (n mod 1)
 
-Floor(1.2) = 1
-Floor(2.8) = 2
+RoundDown(1.2) = 1
+RoundDown(2.8) = 2
 ```
 
 ## Round to interval
