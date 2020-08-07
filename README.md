@@ -14,7 +14,7 @@ Mathematical implementations of programming functions.
 > Depends on [Round down](#round-down)
 
 ```math
-Round(n) = f(n) = RoundDown((n mod 1) + 0.5)
+Round(n) = f(n) = RoundDown(n + 0.5)
 
 Round(1.2) = 1
 Round(2.8) = 3
