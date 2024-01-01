@@ -14,38 +14,54 @@ Mathematical implementations of programming functions.
 > Depends on [Round down](#round-down)
 
 ```math
-Round(n) = f(n) = RoundDown(n + 0.5)
+Round(n) = RoundDown(n + 0.5)
+```
 
-Round(1.2) = 1
-Round(2.8) = 3
+```math
+\begin{align}
+Round(1.2) &= 1 \\
+Round(2.8) &= 3
+\end{align}
 ```
 
 ## Round up
 
+```math
+RoundUp(n) = n + 1 - (n\ \text{mod}\ 1)
 ```
-RoundUp(n) = f(n) = n + 1 - (n mod 1)
 
-RoundUp(1.2) = 2
-RoundUp(2.8) = 3
+```math
+\begin{align}
+RoundUp(1.2) &= 2 \\
+RoundUp(2.8) &= 3
+\end{align}
 ```
 
 ## Round down
 
+```math
+RoundDown(n) = n - (n\ \text{mod}\ 1)
 ```
-RoundDown(n) = f(n) = n - (n mod 1)
 
-RoundDown(1.2) = 1
-RoundDown(2.8) = 2
+```math
+\begin{align}
+RoundDown(1.2) &= 1 \\
+RoundDown(2.8) &= 2
+\end{align}
 ```
 
 ## Round to interval
 
 > Depends on [Round](#round)
 
+```math
+RoundInterval(n, i) = Round(n / i) * i
 ```
-RoundInterval(n, i) = f(n, i) = Round(n / i) * i
 
-RoundInterval(1, 5) = 0
-RoundInterval(4, 5) = 5
-RoundInterval(8, 5) = 10
+```math
+\begin{align}
+RoundInterval(1, 5) &= 0 \\
+RoundInterval(4, 5) &= 5 \\
+RoundInterval(8, 5) &= 10
+\end{align}
 ```
